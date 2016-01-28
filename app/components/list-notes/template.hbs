@@ -11,6 +11,9 @@
         <td>
           {{#link-to 'note' note}}{{note.name}}{{/link-to}}
         </td>
+        <td>
+          {{remove-note-link note=note}}
+        </td>
      </tr>
     {{/each}}
   </tbody>
