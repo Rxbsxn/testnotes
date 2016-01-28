@@ -1,0 +1,34 @@
+
+<form class="form-horizontal" {{action 'saveNote' on='submit'}}>
+  <fieldset>
+
+    <!-- Form Name -->
+    <legend>Form Name</legend>
+
+    <!-- Text input-->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="noteName">Tytuł notatki</label>
+      <div class="col-md-4">
+        {{input value=note.name id="noteName" name="noteName" type="text" placeholder="" class="form-control input-md"}}
+      </div>
+    </div>
+
+    <!-- Textarea -->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="noteContent">Notatka</label>
+      <div class="col-md-4">
+        {{textarea value=note.content class="form-control" id="noteContent" name="noteContent"}}
+      </div>
+    </div>
+
+    <!-- Button (Double) -->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="noteAdd"></label>
+      <div class="col-md-8">
+        <button id="noteAdd" type="submit" name="noteAdd" class="btn btn-success">Zapisz notatkę</button>
+        {{#link-to 'notes'}}<button id="noteCancel" name="noteCancel" class="btn btn-danger">Odrzuć zmiany</button>{{/link-to}}
+      </div>
+    </div>
+
+  </fieldset>
+</form>

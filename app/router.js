@@ -9,7 +9,8 @@ Router.map(function() {
   this.route('notes', function() {
     this.route('add');
   });
-  this.route('note', {path: 'note/:id', function() {
+
+  this.route('note', {path: 'note/:id'}, function() {
     this.route('edit');
   });
 
