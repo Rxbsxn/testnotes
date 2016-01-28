@@ -1,0 +1,17 @@
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Nazwa</th>
+      <th>Opcje</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each notes as |note|}}
+      <tr>
+        <td>
+          {{#link-to 'note' note}}{{note.name}}{{/link-to}}
+        </td>
+     </tr>
+    {{/each}}
+  </tbody>
+</table>
