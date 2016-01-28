@@ -9,7 +9,7 @@
       <label class="col-md-4 control-label" for="noteName">Tytuł notatki</label>
       <div class="col-md-4">
         {{input value=newNote.name id="noteName" name="noteName" type="text" placeholder="" class="form-control input-md"}}
-
+        {{newNote.name}}
       </div>
     </div>
 
@@ -25,7 +25,7 @@
     <div class="form-group">
       <label class="col-md-4 control-label" for="noteAdd"></label>
       <div class="col-md-8">
-        <button id="noteAdd" name="noteAdd" class="btn btn-success">Dodaj notatkę</button>
+        <button id="noteAdd" type="submit" name="noteAdd" class="btn btn-success">Dodaj notatkę</button>
         <button id="noteCancel" name="noteCancel" class="btn btn-danger">Odrzuć</button>
       </div>
     </div>

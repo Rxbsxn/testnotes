@@ -6,9 +6,10 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('note', function() {
+  this.route('notes', function() {
     this.route('add');
   });
+  this.route('note', {path: 'note/:id'});
 });
 
 export default Router;
