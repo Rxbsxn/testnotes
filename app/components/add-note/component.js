@@ -9,9 +9,10 @@ export default Ember.Component.extend({
 
   actions: {
     addNote() {
-      let newNote = this.get('store').createRecord('note', this.get('newNote'));
+      let newNote = this.get('store').createRecord('note', this.get('newNote')).save();
       this.sendAction('afterCreate', newNote);
       this.set('newNote', {});
+
     },
   },
 });
