@@ -1,9 +1,2 @@
-{{#if session.isAuthenticated}}
-  Logged in as {{session.currentUser.displayName}}
-  <button {{action "signOut"}}>Sign out</button>
-{{else}}
-  <button {{action "signIn" "facebook"}}>Sign in </button>
-{{/if}}
-
 <h2 id="title">Welcome to Ember</h2>
 {{outlet}}
