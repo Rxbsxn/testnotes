@@ -32,7 +32,7 @@ test('it renders', function(assert) {
 
   this.render(hbs`{{add-note afterCreate=(action success)}}`);
 
-  this.$('#noteName').val('test').trigger("change");;
-  this.$('#noteContent').val('Testowy tekst').trigger("change");;
+  this.$('#noteName').val('test').trigger("change");
+  this.$('#noteContent').val('Testowy tekst').trigger("change");
   this.$('#noteAdd').click();
 });

@@ -1,4 +1,4 @@
-<table class="table table-striped">
+{{!-- <table class="table table-striped">
   <thead>
     <tr>
       <th>Nazwa</th>
@@ -17,4 +17,15 @@
      </tr>
     {{/each}}
   </tbody>
-</table>
+</table> --}}
+
+
+{{#each notes as |note|}}
+      {{#paper-item}}
+
+        <p>{{#link-to 'note' note}}{{note.name}}{{/link-to}}</p>
+        {{#paper-button icon-button=true param=note action="remove"}}
+          {{paper-icon "delete"}}
+        {{/paper-button}}
+      {{/paper-item}}
+    {{/each}}

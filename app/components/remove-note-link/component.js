@@ -2,9 +2,9 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
   actions: {
-    remove() {
-        this.get('note').deleteRecord();
-        this.get('note').save();
+    remove(note) {
+        note.deleteRecord();
+        note.save();
         this.sendAction('afterRemove');
     },
   },

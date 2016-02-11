@@ -6,7 +6,10 @@ module.exports = function(defaults) {
   var app = new EmberApp(defaults, {
     // Add options here
   });
-  app.import('bower_components/bootstrap/dist/css/bootstrap.min.css');
+  app.import('bower_components/alertify.js/dist/js/alertify.js');
+  app.import('bower_components/alertify.js/dist/css/alertify.css');
+
+//  app.import('bower_components/bootstrap/dist/css/bootstrap.min.css');
 
   //app.import('vendor/bootstrap/dist/fonts/glyphicons-halflings-regular.woff', {
   //destDir: 'fonts'
